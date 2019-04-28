@@ -2,6 +2,7 @@
 docker build -t kiry4/multi-client:latest -t kiry4/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t kiry4/multi-server:latest -t kiry4/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t kiry4/multi-worker:latest -t kiry4/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 #push images to dockerhub
 docker push kiry4/multi-client:latest
 docker push kiry4/multi-server:latest
