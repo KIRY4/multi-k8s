@@ -18,7 +18,7 @@ before_isntall:
   - docker build -t kiry4/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-- docker run kiry4/react-test npm test -- --coverage
+  - docker run kiry4/react-test npm test -- --coverage
 
 deploy:
   provider: script
