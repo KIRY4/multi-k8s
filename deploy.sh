@@ -10,6 +10,7 @@ docker push kiry4/multi-worker:latest
 docker push kiry4/multi-client:$SHA
 docker push kiry4/multi-server:$SHA
 docker push kiry4/multi-worker:$SHA
+
 #deploy to GKE
 kubectl apply -f k8s
 kubectl set image deployments/client-deployment client=kiry4/multi-client:$SHA
